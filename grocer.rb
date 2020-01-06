@@ -27,19 +27,11 @@ def consolidate_cart(cart)
   new_cart = {}
   counter = 0 
   while counter < cart.length do 
-     counter_2 = 0
-     while counter_2 < cart.length do
-        item = cart[counter][:item]
-        items = 0
-        if cart[counter][:item] == cart[counter][:item]
-          items += 1 
-        end
-     counter_2 += 1   
-     end    
      new_cart[:item] = cart[counter][:item]
      new_cart[:price] = cart[counter][:price]
      new_cart[:clearance] = cart[counter][:clearance]
-     new_cart[:count] = cart[counter] = items
+     if 
+     new_cart[:count] = cart[counter] = 
     # puts new_cart
   counter += 1
   end
