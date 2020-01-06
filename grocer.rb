@@ -48,15 +48,15 @@ def apply_coupons(cart, coupons)
   # REMEMBER: This method **should** update cart
   i = 0 
   binding.pry
-  while i < coupons.length do 
-    cart_item = find_item_by_name_in_collection(coupons[i][:item], cart)
-    coupon_item_name = "#{coupons[i][:item]} W/COUPON"
-    cart_item_with_coupon = find_item_by_name_in_collection(coupon_item_name, cart)
-    if cart_item && cart_item[:count] >= coupons[i][:num]
-      if cart_item_with_coupon 
-        cart_item_with_coupon[:count] += coupons[i][:num]
-        cart_item[:counter]
-  end
+  # while i < coupons.length do 
+  #   cart_item = find_item_by_name_in_collection(coupons[i][:item], cart)
+  #   coupon_item_name = "#{coupons[i][:item]} W/COUPON"
+  #   cart_item_with_coupon = find_item_by_name_in_collection(coupon_item_name, cart)
+  #   if cart_item && cart_item[:count] >= coupons[i][:num]
+  #     if cart_item_with_coupon 
+  #       cart_item_with_coupon[:count] += coupons[i][:num]
+  #       cart_item[:counter]
+  # end
 end
 
 def apply_clearance(cart)
