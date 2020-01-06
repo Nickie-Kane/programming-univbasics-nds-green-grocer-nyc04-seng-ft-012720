@@ -29,10 +29,10 @@ def consolidate_cart(cart)
        cart_item[:count] += 1  
      else 
        cart_item = {
-          cart_item[:item] = cart[counter][:item]
-          cart_item[:price] = cart[counter][:price]
-          cart_item[:clearance] = cart[counter][:clearance]
-          cart_item[:count] = 1
+          :item => cart[counter][:item],
+          :price => cart[counter][:price],
+          :clearance => cart[counter][:clearance],
+          :count => 1
        }
        new_cart << cart_item
      end
