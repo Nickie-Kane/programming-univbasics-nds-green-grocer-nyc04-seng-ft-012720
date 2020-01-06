@@ -47,7 +47,7 @@ def apply_coupons(cart, coupons)
   #
   # REMEMBER: This method **should** update cart
   i = 0 
-  binding.pry
+  # binding.pry
   while i < coupons.length do 
     cart_item = find_item_by_name_in_collection(coupons[i][:item], cart)
     coupon_item_name = "#{coupons[i][:item]} W/COUPON"
