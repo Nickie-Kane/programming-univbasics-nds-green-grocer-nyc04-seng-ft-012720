@@ -36,7 +36,8 @@ def consolidate_cart(cart)
      end
   counter += 1
   end
-  return new_cart 
+  binding.pry
+  # return new_cart 
 end
 
 def apply_coupons(cart, coupons)
